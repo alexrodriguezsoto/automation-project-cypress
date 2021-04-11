@@ -1,0 +1,39 @@
+{
+  "name": "automation-project-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-wait-until": "^1.7.1",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:install": "cypress install",
+    "cy:run": "cypress run --config-file cypress.json; npm run generate-reports",
+    "cy:open": "cypress open --config-file cypress.json",
+    "delete-reports": "rm -rf cypress/reports",
+    "generate-reports": "node ./report.js",
+    "precy:run": "npm run delete-reports"
+  },
+  "author": "",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

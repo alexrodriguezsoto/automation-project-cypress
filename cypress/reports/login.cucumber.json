@@ -1,0 +1,63 @@
+[
+  {
+    "description": "  Feature Description\n  Navigate and log in to Application under test",
+    "keyword": "Feature",
+    "name": "log in",
+    "line": 1,
+    "id": "log-in",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "log-in;log-in",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Log in",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am in landing page",
+            "result": {
+              "status": "passed",
+              "duration": 3335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I enter username",
+            "result": {
+              "status": "passed",
+              "duration": 574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I enter Password",
+            "result": {
+              "status": "passed",
+              "duration": 402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I validate current page",
+            "result": {
+              "status": "passed",
+              "duration": 677000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

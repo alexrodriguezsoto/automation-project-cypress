@@ -1,0 +1,7 @@
+{
+ "env": {
+   "qaURL": "https://api.octoperf.com/app/#/access/signin"
+ },
+  "baseUrl": "https://api.octoperf.com/app/#/access/signin",
+  "testFiles": "**/*.{feature,features}"
+}
